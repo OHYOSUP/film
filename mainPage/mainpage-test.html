@@ -62,6 +62,16 @@ console.log(actors);
 // });
 
 let isstatus = true;
+let count = 0;
+
+
+
+if(scrollY === 100){
+  count = 1;
+} else{
+  count = -1;
+}
+
 
 
 root.addEventListener('wheel', (event)=>{
@@ -69,20 +79,16 @@ console.log(event);
 let scrollY = event.deltaY;
 let getDataset = event.target.dataset.a;
 
-
-let count = scrollY + 100;
-
-
 for(let i = 0; i < actors.length; i++){
-
   if(scrollY === 100){
       actors[i].style.fontSize = "3rem";
       actors[i].style.transition = "0.3s";
       actors[i].style.color = "#fff";
-    
     }
   }
 });
+
+
 
 root.addEventListener('wheel', (event)=>{
 console.log(event);
@@ -90,14 +96,11 @@ let scrollY = event.deltaY;
 let getDataset = event.target.dataset.a;
 
 for(let i = 0; i < actors.length; i++){
-
     if(scrollY === -100){
       actors[i].style.fontSize = "2rem";
       actors[i].style.color = "#777";
 
     }
-    
-  
   }
 });
   </script>
