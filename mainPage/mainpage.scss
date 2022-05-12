@@ -1,0 +1,26 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-color: #2D2D2D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &>ul{
+    list-style-type: none;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // opacity: 0.5;
+    color: #777;
+
+
+    &>li{
+      margin-top: 60px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mainpage.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+<ul id = menu>
+  <li class = "list" data-a = "1">엄태구</li>
+  <li class = "list" data-a = "2">이주영</li>
+  <li class = "list" data-a = "3">변요한</li>
+  <li class = "list" data-a = "4">전여빈</li>
+  <li class = "list" data-a = "5">구교환</li>
+  <li class = "list" data-a = "6">이민지</li>
+</ul>
+  </div>
+
+
+  <script>
+const root = document.getElementById('root');
+const menu = document.getElementById('menu')
+const actors = document.getElementsByClassName("list");
+
+console.log(root);
+console.log(menu);
+console.log(actors);
+
+
+
+
+menu.addEventListener('mouseover', (event)=>{
+  console.log(event);
+  let getDataset = event.target.dataset.a;
+
+  for(let i = 0; i < actors.length; i++){
+    // actors[i].style.color = "blue";
+    if(actors[i].dataset.a === getDataset){
+      actors[i].style.color = "#fff";
+      actors[i].style.fontSize = "3rem";
+      actors[i].style.transition = "0.2s";
+      // actors[i].style.opacity = "1";
+    }
+  }
+});
+
+menu.addEventListener('mouseout', ()=>{
+  let getDataset = event.target.dataset.a;
+
+  for(let i = 0; i < actors.length; i++){
+    // actors[i].style.color = "blue";
+    if(actors[i].dataset.a === getDataset){
+      actors[i].style.color = "#777";
+      // actors[i].style.opacity = "0.5";
+      actors[i].style.fontSize = "2rem";
+      // actors[i].style.transition = "0,5s";
+    }
+  }
+});
+
+
+
+
+  </script>
+</body>
+</html>
