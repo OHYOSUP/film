@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+}
+#root > div:nth-child(1) {
+  width: 100vw;
+  height: 15vh;
+  color: #BA3737;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(2) {
+  width: 100vw;
+  height: 10vh;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#root > div:nth-child(2) > h2 {
+  margin-left: 5vw;
+}
+#root > div:nth-child(3) {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(3) > div {
+  width: 16vw;
+  height: 50vh;
+}
+#root > div:nth-child(3) > div:nth-child(1) {
+  background-image: url(1.png);
+  background-size: 10rem;
+}
+#root > div:nth-child(3) > div:nth-child(2) {
+  background-image: url(2.png);
+  background-size: cover;
+  background-position: top 10px;
+}
+#root > div:nth-child(3) > div:nth-child(3) {
+  background-image: url(3.png);
+  background-size: cover;
+}
+#root > div:nth-child(3) > div:nth-child(4) {
+  background-image: url(4.png);
+  background-size: cover;
+}
+#root > div:nth-child(3) > div:nth-child(5) {
+  background-image: url(5.png);
+  background-size: 9rem;
+  background-position: bottom 20px;
+}
+#root > div:nth-child(3) > div:nth-child(6) {
+  background-image: url(6.png);
+  background-size: cover;
+}/*# sourceMappingURL=menu-actor.css.map */
