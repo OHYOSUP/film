@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2D2D2D;
+}
+#root > div:nth-child(1) {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+}
+#root > div:nth-child(1) > nav {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BA3737;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) {
+  width: 100vw;
+  height: 70vh;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(2) > div:nth-child(1) {
+  width: 5vw;
+  height: 5vw;
+  background-color: black;
+}
+#root > div:nth-child(3) {
+  width: 100vw;
+  height: 20vh;
+  border: 1px solid red;
+}
+#root > div:nth-child(3) > div:nth-child(1) {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  color: #fff;
+  width: 15vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  width: 25vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div {
+  width: 5vw;
+  height: 5vw;
+  background-color: black;
+}
+#root > div:nth-child(3) > div:nth-child(2) {
+  width: 100vw;
+  height: 7vh;
+  color: #fff;
+}
+#root > div:nth-child(3) > div:nth-child(2) > p {
+  margin-left: 3vw;
+}
+#root > div:nth-child(3) > div:nth-child(3) {
+  width: 100vw;
+  height: 2vh;
+  display: flex;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) {
+  width: 3vw;
+  height: 3vw;
+  margin-left: 2vw;
+  background-color: rgb(255, 238, 0);
+}
+#root > div:nth-child(3) > div:nth-child(3) > p {
+  color: #fff;
+  margin-left: 2vw;
+}
+#root > div:nth-child(3) > div:nth-child(4) {
+  width: 100vw;
+  height: 4vh;
+}
+#root > div:nth-child(3) > div:nth-child(4) > div:nth-child(1) {
+  width: 25vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(4) > div:nth-child(1) > div {
+  width: 4vw;
+  height: 4vw;
+  background-color: #000;
+}/*# sourceMappingURL=filmPage.css.map */
