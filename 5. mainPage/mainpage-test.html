@@ -6,16 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mainpage.css">
   <title>Document</title>
+  <style>
+
+
+    .on{
+      font-size: 3rem;
+      color: #fff;
+    }
+
+
+  </style>
 </head>
 <body>
   <div id="root">
 <ul id = menu>
-  <li class = "list" data-a = "1">엄태구</li>
-  <li class = "list" data-a = "2">이주영</li>
-  <li class = "list" data-a = "3">변요한</li>
-  <li class = "list" data-a = "4">전여빈</li>
-  <li class = "list" data-a = "5">구교환</li>
-  <li class = "list" data-a = "6">이민지</li>
+  <li id = "list" data-abc = "-1">엄태구</li>
+  <li id = "list" data-abc = "0">이주영</li>
+  <li id = "list" data-abc = "1">변요한</li>
+  <li id = "list" data-abc = "2">전여빈</li>
+  <li id = "list" data-abc = "3">구교환</li>
+  <li id = "list" data-abc = "4">이민지</li>
 </ul>
   </div>
 
@@ -23,12 +33,85 @@
   <script>
 const root = document.getElementById('root');
 const menu = document.getElementById('menu')
-const actors = document.getElementsByClassName("list");
-
-console.dir(root);
-console.log(menu);
+const actors = document.querySelectorAll("#list");
 console.log(actors);
 
+
+
+let dataValue = actors[0].dataset.abc;
+console.log(dataValue);
+
+dataValue = Number(dataValue);
+console.log(typeof dataValue);
+
+let count = -1;
+
+
+
+
+menu.addEventListener('wheel', (event)=>{
+  for(count = -1; count < 5; count++){
+    console.log(count);
+
+  }
+
+  if(event.target.classList.contains('on')){
+    event.target.classList.remove('on');
+    
+  } else{
+    event.target.classList.add('on');
+  }
+});
+
+
+
+
+// root.addEventListener('wheel', ()=>{
+
+//   // console.log(event);
+//   if(event.deltaY === 100){
+//     count++;
+//     dataValue++;
+    
+//     if(count === dataValue){
+      
+//       actors[count].style.fontSize = "3rem";
+//     } else if (event.deltaY === -100){
+//         count--;
+//         dataValue--;
+//       }
+//       if (count 
+//       actors[count].style.fontSize = "2rem";
+
+// console.log(count);
+// console.log(dataValue);
+
+//   } 
+// });
+
+
+// root.addEventListener('wheel', ()=>{
+
+// // console.log(event);
+// if(event.deltaY === 100){
+// count++;
+// if(count > 5){
+//   count= 0;
+//   console.log(count);
+// }
+// actors[count].style.fontSize = "3rem";
+// // console.log(count);
+// // console.log(actors);
+
+// } else {
+//   count--;
+//   console.log(count);
+//   if(count <= -1){
+//     count = 5;
+//   }
+//   actors[count].style.fontSize = "2rem";
+// } 
+// });
 
 
 
@@ -61,48 +144,45 @@ console.log(actors);
 //   }
 // });
 
-let isstatus = true;
-let count = 0;
+// let isstatus = true;
 
 
 
-if(scrollY === 100){
-  count = 1;
-} else{
-  count = -1;
-}
 
 
 
-root.addEventListener('wheel', (event)=>{
-console.log(event);
-let scrollY = event.deltaY;
-let getDataset = event.target.dataset.a;
+// root.addEventListener('wheel', (event)=>{
 
-for(let i = 0; i < actors.length; i++){
-  if(scrollY === 100){
-      actors[i].style.fontSize = "3rem";
-      actors[i].style.transition = "0.3s";
-      actors[i].style.color = "#fff";
-    }
-  }
-});
+// let scrollY = event.deltaY;
 
 
+// for(let count = 0; count < actors.length; count++){
+//   if(scrollY === 100){
+//     // count++;
+//     actors[count].style.fontSize = "3rem";
+//     actors[count].style.transition = "0.3s";
+//     actors[count].style.color = "#fff";
+//     console.log(actors);
+//     console.log(event);
+//     }
+//   }
+// });
 
-root.addEventListener('wheel', (event)=>{
-console.log(event);
-let scrollY = event.deltaY;
-let getDataset = event.target.dataset.a;
 
-for(let i = 0; i < actors.length; i++){
-    if(scrollY === -100){
-      actors[i].style.fontSize = "2rem";
-      actors[i].style.color = "#777";
 
-    }
-  }
-});
-  </script>
+// root.addEventListener('wheel', ()=>{
+
+// let getDataset = event.target.dataset.a;
+
+// for(let i = 0; i < actors.length; i++){
+//     if(scrollY === -100){
+//       actors[i].style.fontSize = "2rem";
+//       actors[i].style.color = "#777";
+
+//     }
+//   }
+// });
+
+</script>
 </body>
 </html>
