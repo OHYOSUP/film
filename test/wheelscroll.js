@@ -1,8 +1,9 @@
 const root = document.getElementById('root');
 // console.log(root);
+
 root.style.width = '100vw'
 root.style.height = '100vh'
-root.style.overflowY = 'hidden'
+root.style.overflow = 'hidden'
 root.style.display = 'flex'
 root.style.justifyContent = 'center'
 root.style.alignItems = 'center'
@@ -24,7 +25,7 @@ const item = document.querySelectorAll('ul>li');
 const screen = document.querySelector('#root>div');
 
 screen.style.width = '40vw'
-screen.style.height = '15vh'
+screen.style.height = '60vh'
 screen.style.border = '1px solid red'
 screen.style.overflow = 'hidden'
 screen.style.position = 'relative'

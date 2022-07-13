@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,8 @@
 #root > div:nth-child(2) {
   width: 100vw;
   height: 70vh;
-  background-color: #c4c4c4;
+  background-image: url(./actor.svg);
+  background-size: cover;
 }
 #root > div:nth-child(2) > div:nth-child(1) {
   color: #fff;
@@ -51,4 +53,16 @@
   width: 25vw;
   height: 17vh;
   background-color: #c4c4c4;
+}
+#root > div:nth-child(3) > div:nth-child(1) {
+  background-image: url(./여배우는\ 오늘도\ 1.svg);
+  background-size: cover;
+}
+#root > div:nth-child(3) > div:nth-child(2) {
+  background-image: url(./여자들.svg);
+  background-size: cover;
+}
+#root > div:nth-child(3) > div:nth-child(3) {
+  background-image: url(./죄많은소녀.svg);
+  background-size: cover;
 }/*# sourceMappingURL=actorpage.css.map */
