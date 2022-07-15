@@ -30,8 +30,8 @@
 
   &>div:nth-child(2) {
     width: 100vw;
-    height: 70vh;
-    background-color: #ccc;
+    height: 60vh;
+    background-color: #000;
 
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
   &>div:nth-child(3) {
     width: 100vw;
     height: 20vh;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &>div:nth-child(1) {
       width: 100vw;
@@ -79,16 +79,31 @@
           height: 5vw;
           background-color: black;
         }
+        
       }
     }
 
     &>div:nth-child(2) {
-      width: 100vw;
-      height: 7vh;
+      width: 95vw;
+      height: 18vh;
       color: #fff;
-
+      text-align: justify;
+      line-height: 25px;
+      // border: 1px solid red;
       &>p {
         margin-left: 3vw;
+        font-size: 0.6rem;
+      }
+      &>p:nth-child(1){
+        height: 3vh;
+      }
+      &>p:nth-child(2){
+        height: 11vh;
+      // border: 1px solid red;
+      }
+      &>p:nth-child(3){
+        height: 2vh;
+      // border: 1px solid red;
       }
     }
 
@@ -97,7 +112,7 @@
       height: 2vh;
       display: flex;
       align-items: center;
-
+      // border: 1px solid red;
       &>div:nth-child(1) {
         width: 3vw;
         height: 3vw;
